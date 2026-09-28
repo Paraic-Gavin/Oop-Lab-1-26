@@ -14,5 +14,17 @@ public class Book {
         System.out.println("Book page count: " + pageCount);
         System.out.println("Book available: " + available);
     }
+public void borrowBook()
+{
+    if (available)
+    {
+        available = false;
+        System.out.println(title +" has been borrowed.");
+    }
+    else{
+        System.out.println(title +" is already on loan.");
+    }
+}
+
 
 }
